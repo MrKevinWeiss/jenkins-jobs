@@ -2,6 +2,10 @@ pipeline {
     libraries {
         lib('hil-jenkins-job')
     }
+    parameters {
+        string(name: 'STATEMENT', defaultValue: 'hello; ls /', description: 'What should I say?')
+    }
+    description
     agent { label 'master' }
     stages {
         stage('setup master') {

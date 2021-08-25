@@ -1,4 +1,4 @@
-pipelineJob('nightly2') {
+pipelineJob('test_nightly') {
     definition {
         cpsScm {
             scm {
@@ -8,7 +8,7 @@ pipelineJob('nightly2') {
                     }
                 }
             }
-            scriptPath('jobs/nightly3')
+            scriptPath('job_scripts/test_nightly')
         }
     }
 }
