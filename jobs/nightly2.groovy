@@ -1,20 +1,14 @@
-pipeline {
-    libraries {
-        lib('hil-jenkins-job')
-    }
-    agent { label 'master' }
-    stages {
-        stage('setup master') {
-            steps {
-                script{
-                    stepTest()
+pipelineJob('nightly2') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        github('MrKevinWeiss/jenkins-jobs')
+                    }
                 }
             }
+            scriptPath('jobs/nightly3')
         }
     }
-}
-
-def stepTest() {
-    test.test_1("msg1")
-    test("msg2")
 }
