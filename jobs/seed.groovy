@@ -1,7 +1,7 @@
 freeStyleJob('seed_jobs') {
     steps {
-        dsl {
-            external("jobs/nightly2", "jobs/nightly3")
-        }
+      dsl {
+        text("echo 'hello'")
+      }
     }
 }
