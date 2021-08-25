@@ -8,7 +8,7 @@ pipelineJob('test_nightly') {
                     }
                 }
             }
-            scriptPath('job_scripts/test_nightly')
+            scriptPath('job_scripts/test_nightly.groovy')
         }
     }
 }
