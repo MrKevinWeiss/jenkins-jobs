@@ -4,4 +4,5 @@ def test_1(String msg) {
 
 def call(String msg) {
     println("call: ${msg}")
+    println("another test")
 }
