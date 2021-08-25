@@ -1,4 +1,7 @@
 pipeline {
+    libraries {
+        lib('hil-jenkins-job')
+    }
     agent { label 'master' }
     stages {
         stage('setup master') {
