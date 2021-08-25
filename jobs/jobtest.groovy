@@ -9,7 +9,7 @@ pipeline {
     }
 }
 
-pipelineJob('nightly') {
+pipelineJob('nightly2') {
     triggers {
         cron("H 23 * * *")
     }
